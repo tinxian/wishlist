@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    {{msg}}
+    <Wishes />
   </div>
 </template>
 
 <script>
+import Wishes from './components/Wishes';
+
 export default {
   name: 'app',
   components: {
-
+    Wishes
   },
   data() {
     return {
