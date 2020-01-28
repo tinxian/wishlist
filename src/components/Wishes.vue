@@ -1,11 +1,20 @@
 <template>
   <div>
-    <h1>Wishlist</h1>
+    <div v-bind:key="wish.id" v-for="wish in wishes">
+      <WishItem />
+    </div>
   </div>
 </template>
+
 <script>
+import WishItem from './WishItem.vue';
+
 export default {
-  name: "Wishes"
+  name: "Wishes",
+  components: {
+    WishItem
+  },
+  props: ["wishes"]
 }
 </script>
 <style scoped>

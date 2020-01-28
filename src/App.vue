@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Wishes />
+    <Wishes v-bind:wishes="wishes"/>
   </div>
 </template>
 
@@ -17,17 +17,17 @@ export default {
       wishes: [
         {
           id: 1,
-          title: 'Wish 1',
+          title: "Wish 1",
           completed: false
         },
         {
           id: 2,
-          title: 'Wish 2',
+          title: "Wish 2",
           completed: false
         },
         {
           id: 3,
-          title: 'Wish 3',
+          title: "Wish 3",
           completed: false
         }
       ]
