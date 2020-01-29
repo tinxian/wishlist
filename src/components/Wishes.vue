@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-bind:key="wish.id" v-for="wish in wishes">
-      <WishItem />
+      <WishItem v-bind:wish="wish" />
     </div>
   </div>
 </template>
