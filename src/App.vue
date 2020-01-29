@@ -23,17 +23,17 @@ export default {
       wishes: [
         {
           id: 1,
-          title: "Wish 1",
+          title: "iPad Pro",
           completed: false
         },
         {
           id: 2,
-          title: "Wish 2",
+          title: "iPhone Xs Max",
           completed: true
         },
         {
           id: 3,
-          title: "Wish 3",
+          title: "Mac Pro",
           completed: false
         }
       ]
