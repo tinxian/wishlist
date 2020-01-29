@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-bind:key="wish.id" v-for="wish in wishes">
-      <WishItem v-bind:wish="wish" />
+      <WishItem v-bind:wish="wish" v-on:del-wish="$emit('del-wish', wish.id)" />
     </div>
   </div>
 </template>
@@ -17,6 +17,7 @@ export default {
   props: ["wishes"]
 }
 </script>
+
 <style scoped>
 
 </style>
